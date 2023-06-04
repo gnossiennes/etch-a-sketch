@@ -1,0 +1,41 @@
+* { 
+	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Noto sans, arial, sans-serif;
+    font-weight: 800;
+    font-variant-caps: small-caps;
+}
+
+.header {
+    font-size: 24px;
+}
+
+
+
+.squaregrid {
+    min-width: 80vw;
+    min-height: 80vw;
+    margin: 20px;
+    display: grid;
+    grid-gap: 5px;
+}
+
+.cell {
+    background: hsl(200, 17%, 50%);
+    transition: 3s;
+    transition-timing-function: ease-in;
+    border-radius: 1vh;
+}
+
+.cell:hover {
+    transition: 0.5s;
+    border-radius: 10vh;
+}
+
+
