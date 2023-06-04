@@ -31,6 +31,11 @@ function makeGrid(height, width) {
             squareGrid.innerHTML += `<div onmouseover="chg(this)" class="cell"></div>`
         }
     }   
+
+    for (let i = 0; i < cell.length; i++) {
+        cell[i].style.backgroundColor = randomColor();
+    }
+    
 }
 
 fourByFour.addEventListener('click', () => makeGrid(4,4));

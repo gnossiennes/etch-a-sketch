@@ -10,10 +10,43 @@ body {
     font-family: Noto sans, arial, sans-serif;
     font-weight: 800;
     font-variant-caps: small-caps;
+    color: hsl(0,0%,30%);
+    gap: 2vh;
 }
 
 .header {
-    font-size: 24px;
+    max-width: 80vw;
+    font-size: 6vh;
+    text-align: center;
+    line-height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-sizes {
+    display: flex;
+    flex: 1 1 0;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+button {
+    height: 10vh;
+    width: 25vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.4em;
+    font-weight: 800;
+    font-variant-caps: small-caps;
+    color: hsl(0,0%,30%);
+    background-color: hsl(180, 20%, 90%)
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 
@@ -21,21 +54,20 @@ body {
 .squaregrid {
     min-width: 80vw;
     min-height: 80vw;
-    margin: 20px;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 1%;
 }
 
 .cell {
     background: hsl(200, 17%, 50%);
     transition: 3s;
     transition-timing-function: ease-in;
-    border-radius: 1vh;
+    border-radius: 10%;
 }
 
 .cell:hover {
-    transition: 0.5s;
-    border-radius: 10vh;
+    transition: 0.01s;
+    border-radius: 50%;
 }
 
 
