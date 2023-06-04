@@ -15,10 +15,10 @@ body {
 }
 
 .header {
-    max-width: 80vw;
+    max-width: 80vmin;
     font-size: 6vh;
     text-align: center;
-    line-height: 6vh;
+    line-height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +26,15 @@ body {
 
 .grid-sizes {
     display: flex;
-    flex: 1 1 0;
-    width: 80vw;
+    flex: 1 1 auto;
+    width: 80vmin;
     justify-content: space-between;
     align-items: space-between;
 }
 
 button {
-    height: 10vh;
-    width: 25vw;
+    width: 30%;
+    min-height: 80px;
     border-radius: 10px;
     border: none;
     font-size: 1.4em;
@@ -49,14 +49,14 @@ button:hover {
     transition: 0.3s;
 }
 
-
-
 .squaregrid {
-    min-width: 80vw;
-    min-height: 80vw;
+    height: 80vmin;
+    width: 80vmin;
+    padding-bottom: 2vw;
     display: grid;
     grid-gap: 1%;
 }
+
 
 .cell {
     background: hsl(200, 17%, 50%);
